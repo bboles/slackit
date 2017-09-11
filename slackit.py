@@ -8,8 +8,7 @@ if 'SLACK_TOKEN' not in os.environ:
     print ("Please set SLACK_TOKEN in your environment.")
     sys.exit(1)
 
-#SLACK_TOKEN = os.environ.get('SLACK_TOKEN')
-SLACK_TOKEN = 'xoxp-2156392767-19815126276-33228244965-c56e084c6c'
+SLACK_TOKEN = os.environ.get('SLACK_TOKEN')
 slack_client = SlackClient(SLACK_TOKEN)
 
 def test_slack(slack_client):
